@@ -1,1 +1,271 @@
 
+body,html{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    color: white;
+    justify-content: space-between;
+    flex: 1 0 auto;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0.75px);
+    margin: 0;
+     
+
+}
+
+.logo { 
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 50px;
+    
+    border-right: 6px solid whitesmoke;
+    border-bottom: 6px solid whitesmoke;
+    border-top: 2px dashed whitesmoke;
+    border-left:4px dashed  whitesmoke;
+    
+}
+
+.opening{
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    align-items: center;
+    margin-top: 70px;
+    flex: 1 0 auto;
+    
+}
+
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:50px;
+    font-size: 20px;
+}
+
+.catman{
+    height: auto;
+    width: 30%;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 20px;
+    margin-right: 50px;
+    border-radius: 8%;
+    filter: drop-shadow(0 0 0.25rem white);
+    
+}
+
+#intro {
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: column wrap;
+    padding: 10px;
+    
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.cat-tree {
+    background-image: url(./img/night-sky.jpg);
+    min-height: 100%;
+
+    background-attachment:fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.vengeance {
+    /*text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 1px #fff, 0 0 25px black, 0 0 20px black, 0 0 35px black;*/
+    font-size: 7rem;
+    text-shadow: 0 0 0px #fff, 0 0 15px #fff;
+    margin-bottom: 0;
+    
+}
+
+
+.night{
+    font-size: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+    margin-left: 30px;
+    
+}
+
+
+.information {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    padding: 20px;
+    margin: 0;
+           
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    box-shadow: 0 0 50px #ccc;
+    
+}
+
+.information h1{
+    text-shadow: 0 0 0px #fff, 0 0 15px #fff;
+}
+
+.catpic { 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    transition: .5s ease-in-out;
+    padding: 5px;  
+}
+
+.photo:hover{
+    width: 400px;
+    height: 400px;
+    transform: scale(1,1);
+    transition: .5s ease-in-out;
+}
+
+.gallery {
+
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+margin: 20px;
+}
+
+.catpic p{
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+
+.photo:hover ~ p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.morning {
+    background-image: url(./img/sunrise.jpg);
+
+    min-height: 50%;
+
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.quote {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.saying {
+   
+
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+
+h3 {
+    text-align: right;
+}
+
+.miss-me {
+    height: 200px;
+    width: 500px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #e0455f;
+    
+}
+
+.button{
+    height: 50px;
+    width: 150px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+.footer {
+   
+    text-align: center; 
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0.75px);
+    margin: 0;
+    padding: 0;
+
+}
